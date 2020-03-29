@@ -1,10 +1,14 @@
-// document.getElementById("navbar_logo").onclick = function() {
-//   scrollToTop();
-// }
-//
-// function scrollToTop() {
-//   if (document.body.scrollTop !== 0 || document.documentElement.scrollTop !== 0) {
-//         window.scrollBy(0, -40);
-//         requestAnimationFrame(scrollToTop);
-//     }
-// }
+$(document).ready(function() {
+  $("#navbar_logo").on('click', smoothScroll);
+});
+
+function smoothScroll(event) {
+  if (this.hash !== "") {
+    var oldHash = this.hash;
+
+    $('html, body').animate({
+      scrollTop: $(oldHash).offset().top
+    }, 800, 'swing');
+    window.location.hash = oldHash;
+  }
+}

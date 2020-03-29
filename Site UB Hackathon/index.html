@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body class="d-flex flex-column h-100">
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://www.gstatic.com/firebasejs/7.13.0/firebase-app.js"></script>
@@ -32,7 +32,7 @@
     </script>
 
     <nav class="navbar navbar-dark navbar-expand-md fixed-top back-dark" id="navbar_main">
-      <a class="navbar-brand font-righteous" id="navbar_logo">
+      <a class="navbar-brand font-righteous" id="navbar_logo" href="#container_0">
         <+>
       </a>
       <button class="navbar-toggler" style="border-style: none" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Afiseaza navigare">
@@ -80,6 +80,22 @@
         <p class="section-title">
           <span class="section-underline font-righteous">Descriere</span>
         </p>
+        <div class="container back-dark my-5" id="container_1_signup">
+          <div class="row h-100">
+            <div class="col px-0 d-flex flex-column align-items-center justify-content-center" id="container_1_col_1">
+              <button type="button" class="btn" id="signup_btn_v">
+                <h4 class="signup-filler-text">Inscrie-te drept</h4>
+                <h1 class="signup-opt-text">Voluntar</h1>
+              </button>
+            </div>
+            <div class="col px-0 d-flex flex-column align-items-center justify-content-center" id="container_1_col_2">
+              <button type="button" class="btn signup-btn-back-anim" id="signup_btn_c">
+                <h4 class="signup-filler-text">Inscrie-te drept</h4>
+                <h1 class="signup-opt-text">Concurent</h1>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
