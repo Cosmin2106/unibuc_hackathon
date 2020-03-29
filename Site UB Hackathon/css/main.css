@@ -5,6 +5,7 @@
   --color-green: #1EB980;
   --color-green-dark: #045D56;
   --logo-dim: 200px;
+  --uni-logo-dim: 110px;
 }
 
 * {
@@ -183,10 +184,41 @@ h1 {
 }
 
 
-/* Sectiune 3 */
+/* Sectiune 4 */
 
 #container_3 {
   height: 800px;
+}
+
+
+/* Footer */
+
+.col-divider {
+  border-right: 1px solid #4d4d59;
+}
+.footer-title-container {
+  justify-content: flex-end;
+}
+.footer-title {
+  color: white;
+}
+.footer-text-container {
+  justify-content: flex-start;
+}
+.footer-text {
+  color: white;
+  font-size: 18px;
+}
+.footer-text:hover {
+  color: white;
+}
+#container_footer {
+  height: 100%;
+}
+#container_footer_logo {
+  margin-right: 16px;
+  width: var(--uni-logo-dim);
+  height: var(--uni-logo-dim);
 }
 
 
@@ -246,6 +278,16 @@ h1 {
     padding: 48px;
     color: white;
     font-size: 48px;
+  }
+  .footer-title-container {
+    border-style: none;
+    justify-content: center;
+  }
+  .footer-text-container {
+    border-top: 1px solid #4d4d59;
+    margin-top: 18px;
+    padding-top: 18px;
+    align-items: center;
   }
 }
 @media (max-width: 1200px) {
