@@ -1,6 +1,7 @@
 $(document).ready(function() {
   $("#navbar_logo").on('click', smoothScroll);
   $("#signup_btn_main").on('click', smoothScroll);
+  $("#navbar_opt1").on('click', smoothScroll);
   $("#navbar_opt2").on('click', smoothScroll);
 });
 

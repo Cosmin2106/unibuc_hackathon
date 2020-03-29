@@ -144,6 +144,14 @@ h1 {
   background-repeat: repeat-x;
   background-size: 100% 6px;
 }
+.text-description {
+  color: white;
+  font-size: 32px;
+}
+.text-description2 {
+  color: white;
+  font-size: 28px;
+}
 .signup-filler-text {
   color: white;
 }
