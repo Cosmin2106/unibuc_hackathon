@@ -1,0 +1,51 @@
+/* Sectiune 0 */
+
+.title-container-norm {
+  background: linear-gradient(180deg, #1EB980 0, #1EB980 86%, #36eeb9 86%, #36eeb9 88%, #045D56 88%, #045D56 100%);
+  padding-bottom: 48px;
+}
+.container_0-norm-title-small {
+  font-size: 9vw !important;
+  color: black;
+  margin-top: -16px;
+}
+#container_0-norm {
+  height: 100%;
+  padding-top: 140px;
+  color: white;
+  background: transparent;
+}
+#container_0-norm_logo {
+  opacity: 1;
+  width: var(--logo-dim);
+  height: var(--logo-dim);
+}
+
+
+/* Sectiune 1 */
+
+.desc-text-norm {
+  color: white;
+  font-size: 36px;
+}
+.member-name {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-size: 32px;
+  color: white;
+}
+@media (max-width: 480px) {
+  .member-name {
+    font-size: 24px;
+  }
+}
+.rule-header {
+  font-weight: bolder;
+  margin-bottom: 8px;
+  color: white;
+  font-size: 36px;
+}
+.rule-body {
+  color: white;
+  font-size: 20px;
+}

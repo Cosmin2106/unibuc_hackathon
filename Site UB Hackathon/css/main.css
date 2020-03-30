@@ -15,6 +15,11 @@ h1 {
   font-family: 'Righteous', cursive;
 }
 
+.btn:focus {
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
 .back-dark {
   background-color: var(--back-color-dark);
 }
@@ -55,6 +60,7 @@ h1 {
 .navbar-contract {
   padding-top: 20px;
   padding-bottom: 20px;
+  -webkit-box-shadow: 0px 0px 8px -1px #000;
   box-shadow: 0px 0px 8px -1px #000;
 }
 .navbar-brand {
@@ -189,6 +195,7 @@ h1 {
 #container_1_signup {
   height: 320px;
   border-radius: 4px;
+  -webkit-box-shadow: 0px 4px 6px -1px #111111;
   box-shadow: 0px 4px 6px -1px #111111;
   padding: 0;
 }
@@ -343,6 +350,7 @@ h1 {
   height: 200px;
   background-color: var(--back-color-dark);
   border-radius: 6px;
+  -webkit-box-shadow: 0px 2px 2px -1px #111111;
   box-shadow: 0px 2px 2px -1px #111111;
 }
 #loading_logo {
@@ -524,7 +532,7 @@ h1 {
     background: transparent;
   }
   .title-container {
-    background: linear-gradient(180deg, #1EB980 0, #1EB980 88%, #36eeb9 88%, #36eeb9 90%, #045D56 90%, #045D56 100%); /* background mic */
+    background: linear-gradient(180deg, #1EB980 0, #1EB980 86%, #36eeb9 86%, #36eeb9 88%, #045D56 88%, #045D56 100%); /* background mic */
     padding-bottom: 48px;
   }
   .container_0-title-big {
