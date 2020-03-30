@@ -24,7 +24,7 @@ h1 {
 .font-righteous {
   font-family: 'Righteous', cursive;
 }
-.text-col-green {
+.text-col-green1 {
   color: var(--color-green-light);
   -webkit-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
@@ -32,8 +32,8 @@ h1 {
 .text-col-blue {
   color: #1565c0;
 }
-.text-col-green-light {
-  color: white;
+.text-col-green2 {
+  color: var(--color-green-dark);
   -webkit-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
 }
@@ -143,6 +143,9 @@ h1 {
   height: 100%;
   padding: 48px;
   font-size: 36px;
+}
+#container_0_desc_0 {
+  font-size: 54px;
 }
 
 
@@ -323,9 +326,9 @@ h1 {
 }
 .challenge-text {
   font-size: 34px;
-  margin-left: 56px;
+  margin-left: 24px;
   padding: 16px;
-  background: linear-gradient(70deg, #1EB980 0%, #1EB980 40%, #36eeb9 40%, #36eeb9 45%, #045D56 45%, #045D56 60%, transparent 60%);
+  background: linear-gradient(70deg, #1EB980 0, #1EB980 78px, #36eeb9 78px, #36eeb9 85px, #045D56 85px, #045D56 110px, transparent 110px);
   border-radius: 40px;
 }
 .challenge-text2 {
@@ -442,7 +445,42 @@ h1 {
     font-size: 150px !important;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 480px) {
+  .text-description2 {
+    font-size: 22px;
+  }
+  .signup-filler-text {
+    font-size: 14px;
+    color: white;
+  }
+  .signup-opt-text {
+    font-size: 24px;
+    color: white;
+  }
+  .faq-question {
+    font-size: 32px;
+  }
+  .faq-answer {
+    font-size: 22px;
+  }
+  #container_0_desc_0 {
+    font-size: 50px;
+  }
+  #container_0_desc_1 {
+    font-size: 32px;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .signup-filler-text {
+    font-size: 16px;
+    color: white;
+  }
+  .signup-opt-text {
+    font-size: 36px;
+    color: white;
+  }
+}
+@media (max-width: 767px) {
   .hover-btn-back-anim:before {
     content: "";
     position: absolute;
@@ -473,14 +511,6 @@ h1 {
     margin-top: 18px;
     padding-top: 18px;
     align-items: center;
-  }
-  .signup-filler-text {
-    font-size: 16px;
-    color: white;
-  }
-  .signup-opt-text {
-    font-size: 36px;
-    color: white;
   }
   #container_1_signup {
     height: 220px;

@@ -12,6 +12,7 @@ $(document).ready(function() {
   $("#navbar_opt1").on('click', smoothScroll);
   $("#navbar_opt2").on('click', smoothScroll);
   $("#navbar_opt3").on('click', smoothScroll);
+  $("#navbar_opt4").on('click', smoothScroll);
 });
 
 function smoothScroll() {
