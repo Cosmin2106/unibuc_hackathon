@@ -15,21 +15,8 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://www.gstatic.com/firebasejs/7.13.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.0/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.13.0/firebase-analytics.js"></script>
-    <script>
-      var firebaseConfig = {
-        apiKey: "AIzaSyCUMchy7fCFTtK9-Rrf_ShhABQcp2H7MSc",
-        authDomain: "ub-hack-e9576.firebaseapp.com",
-        databaseURL: "https://ub-hack-e9576.firebaseio.com",
-        projectId: "ub-hack-e9576",
-        storageBucket: "ub-hack-e9576.appspot.com",
-        messagingSenderId: "13647175785",
-        appId: "1:13647175785:web:97aa00a16e2c93360302f8",
-        measurementId: "G-9GS8P65ZMB"
-      };
-      firebase.initializeApp(firebaseConfig);
-      firebase.analytics();
-    </script>
 
     <nav class="navbar navbar-dark navbar-expand-md fixed-top back-dark" id="navbar_main">
       <a class="navbar-brand font-righteous" id="navbar_logo" href="#container_0">
@@ -47,7 +34,7 @@
             <a class="nav-link" href="#container_2_title" id="navbar_opt2">Program</a>
           </li>
           <li class="nav-item hover-underline-anim">
-            <a class="nav-link" href="#container_3_title" id="navbar_opt3">Challenges</a>
+            <a class="nav-link" href="#container_3_title" id="navbar_opt3">Provocari</a>
           </li>
           <li class="nav-item hover-underline-anim">
             <a class="nav-link" href="#">Despre</a>
@@ -237,8 +224,61 @@
     <section class="back-light">
       <div class="container-fluid" id="container_3">
         <p class="section-title">
-          <span class="section-underline font-righteous"id="container_3_title">Challenges</span>
+          <span class="section-underline font-righteous"id="container_3_title">Provocari</span>
         </p>
+        <!-- loading... -->
+        <div class="container d-flex justify-content-center align-items-center pb-5" id="container_3_cont_loading">
+          <div class="text-center" id="container_3_loading">
+            <img src="res/htf-logo-glitch-dark.gif" id="loading_logo" alt="Badass Logo Again">
+            <p class="font-righteous" id="loading_text">Se incarca...</p>
+          </div>
+        </div>
+        <!-- cronometru -->
+        <div class="container container-anim" id="container_3_cont_counter">
+          <div class="row">
+            <div class="text-counter-cont col-lg-3 text-center d-flex justify-content-center">
+              <h1 class="text-counter"><span class="font-righteous" id="counter_days">00</span><br>zile</h1>
+            </div>
+            <div class="text-counter-cont col-lg-3 text-center d-flex justify-content-center">
+              <h1 class="text-counter"><span class="font-righteous" id="counter_hours">00</span><br>ore</h1>
+            </div>
+            <div class="text-counter-cont col-lg-3 text-center d-flex justify-content-center">
+              <h1 class="text-counter"><span class="font-righteous" id="counter_mins">00</span><br>min</h1>
+            </div>
+            <div class="text-counter-cont col-lg-3 text-center d-flex justify-content-center">
+              <h1 class="text-counter"><span class="font-righteous" id="counter_secs">00</span><br>sec</h1>
+            </div>
+          </div>
+        </div>
+        <!-- provocari -->
+        <div class="container container-anim mb-5" id="container_3_cont_challenges">
+          <div class="challenge-text-cont row d-flex align-items-center">
+            <div class="col-md-3">
+              <h1 class="challenge-text">01</h1>
+            </div>
+            <div class="col-md-9">
+              <p class="challenge-text2">Provocare foarte complicata wergt yrtju o p9[-0 =-0-9o8 7iu6yer] care este aici cu noi.</p>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="challenge-text-cont row d-flex align-items-center">
+            <div class="col-md-3">
+              <h1 class="challenge-text">02</h1>
+            </div>
+            <div class="col-md-9">
+              <p class="challenge-text2">Provocare complicata care este aici cu noi.</p>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="challenge-text-cont row d-flex align-items-center">
+            <div class="col-md-3">
+              <h1 class="challenge-text">03</h1>
+            </div>
+            <div class="col-md-9">
+              <p class="challenge-text2">Provocare foarte complicasafdghtta care este aici cu noi.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -298,6 +338,6 @@
     </section>
 
     <script src="js/main.js"></script>
-    <script src="js/scroll.js"></script>
+    <script src="js/util.js"></script>
   </body>
 </html>

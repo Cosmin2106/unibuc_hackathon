@@ -161,7 +161,6 @@ h1 {
   background-size: 100% 6px;
 }
 .section-underline2 {
-  /* background-image: linear-gradient(-90deg, #1EB980 0%, #1EB980 50%, transparent 70%); */
   background-position: 0 100%;
   background-repeat: repeat-x;
   background-size: 100% 4px;
@@ -186,7 +185,7 @@ h1 {
 }
 #container_1_signup {
   height: 320px;
-  border-radius: 3px;
+  border-radius: 4px;
   box-shadow: 0px 4px 6px -1px #111111;
   padding: 0;
 }
@@ -291,8 +290,66 @@ h1 {
 
 /* Sectiune 4 */
 
+.text-counter {
+  color: white;
+  font-size: 56px;
+  transform: translateY(20%);
+}
+.text-counter-cont {
+  margin-bottom: 120px;
+}
+.text-counter-cont:before {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border: 4px solid var(--color-green);
+  background: var(--back-color-dark);
+  border-radius: 50%;
+}
+.container-anim {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.item-gone {
+  opacity: 0;
+  position: absolute;
+}
+.challenge-text-cont {
+  padding: 24px;
+  border-radius: 80px;
+  margin-top: 36px;
+  margin-bottom: 36px;
+}
+.challenge-text {
+  font-size: 34px;
+  margin-left: 56px;
+  padding: 16px;
+  background: linear-gradient(70deg, #1EB980 0%, #1EB980 40%, #36eeb9 40%, #36eeb9 45%, #045D56 45%, #045D56 60%, transparent 60%);
+  border-radius: 40px;
+}
+.challenge-text2 {
+  color: white;
+  font-size: 28px;
+}
 #container_3 {
-  height: 800px;
+  height: 100%;
+}
+#container_3_loading {
+  width: 200px;
+  height: 200px;
+  background-color: var(--back-color-dark);
+  border-radius: 6px;
+  box-shadow: 0px 2px 2px -1px #111111;
+}
+#loading_logo {
+  width: 80%;
+  height: 80%;
+}
+#loading_text {
+  color: white;
+  font-size: 24px;
+  margin-top: -20px;
 }
 
 

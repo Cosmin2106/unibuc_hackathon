@@ -1,3 +1,11 @@
+window.onscroll = function() {
+  if ($(document).scrollTop() > 80) {
+    $("#navbar_main").addClass("navbar-contract");
+  } else {
+    $("#navbar_main").removeClass("navbar-contract");
+  }
+}
+
 $(document).ready(function() {
   $("#navbar_logo").on('click', smoothScroll);
   $("#signup_btn_main").on('click', smoothScroll).on('click', changeColors);
