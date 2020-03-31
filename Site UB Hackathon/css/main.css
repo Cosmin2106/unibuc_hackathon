@@ -38,7 +38,7 @@ h1 {
   color: #1565c0;
 }
 .text-col-green2 {
-  color: var(--color-green-dark);
+  color: #2c2c33;
   -webkit-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
 }
