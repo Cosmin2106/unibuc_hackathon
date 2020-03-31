@@ -30,4 +30,5 @@ function smoothScroll() {
 function changeColors() {
   $('#color-text-despre').addClass("text-col-blue");
   $('#color-text-vs').addClass("text-col-yellow");
+  $('#color-text-covid').addClass("text-col-red");
 }

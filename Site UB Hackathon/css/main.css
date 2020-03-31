@@ -45,6 +45,14 @@ h1 {
 .text-col-yellow {
   color: #fdd835;
 }
+.text-col-green3 {
+  color: #ab47bc;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+.text-col-red {
+  color: #ef5350;
+}
 
 
 /* Naviagtie */
