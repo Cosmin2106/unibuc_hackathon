@@ -72,7 +72,7 @@ function loadChallenges(data) {
 
     var colText = document.createElement("p");
     $(colText).addClass("challenge-text2");
-    $(colText).text(data[i - 1]);
+    $(colText).html(data[i - 1]);
     var colNum = document.createElement("h1");
     $(colNum).addClass("challenge-text");
     if (i < 10) {
