@@ -350,10 +350,7 @@ h1 {
   color: white;
   font-size: 24px;
 }
-#container_3 {
-  height: 100%;
-}
-#container_3_loading {
+.loading {
   width: 200px;
   height: 200px;
   background-color: var(--back-color-dark);
@@ -361,14 +358,17 @@ h1 {
   -webkit-box-shadow: 0px 2px 2px -1px #111111;
   box-shadow: 0px 2px 2px -1px #111111;
 }
-#loading_logo {
+.loading-logo {
   width: 80%;
   height: 80%;
 }
-#loading_text {
+.loading-text {
   color: white;
   font-size: 24px;
   margin-top: -20px;
+}
+#container_3 {
+  height: 100%;
 }
 
 
@@ -425,6 +425,41 @@ h1 {
   height: var(--uni-logo-dim);
 }
 
+
+/* Sectiune Loading... */
+
+.container-loading-off {
+  pointer-events: none;
+  opacity: 0;
+  position: fixed;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  z-index: 2;
+}
+.container-loading-on {
+  pointer-events: all;
+  opacity: 1;
+}
+.alert-bottom-page {
+  z-index: 2;
+  position: fixed;
+  bottom: 16px;
+  left: 2%;
+  width: 96%;
+}
+#container_loading_back {
+  background-color: black;
+  opacity: 0.5;
+}
+#loading_big {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 3;
+}
 
 /* Adaptabilitate */
 

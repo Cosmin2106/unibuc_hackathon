@@ -60,7 +60,7 @@
           </div>
           <div class="col-xl-6 order-xl-1 pt-5" id="container_0_desc">
             <p id="container_0_desc_0">
-              <b>50 de ore</b>:<br><span class="text-col-green1" id="color-text-despre">Developers</span> <span class="text-col-green2" id="color-text-vs">vs</span> <span class="text-col-green3" id="color-text-covid">Coronavirus</span>
+              <b>50 de ore</b>:<br><span class="text-col-green1" id="color-text-despre">Students</span> <span class="text-col-green2" id="color-text-vs">vs</span> <span class="text-col-green3" id="color-text-covid">Crisis</span>
             </p>
             <p id="container_0_desc_1">Fiecare linie de cod conteaza: ajuta la gasirea unei solutii pentru una dintre provocarile ridicate de raspandirea virusului COVID-19.</p>
           </div>
@@ -99,16 +99,16 @@
         <div class="container back-dark my-5" id="container_1_signup">
           <div class="d-flex h-100">
             <div class="p-0 d-flex flex-column align-items-center justify-content-center" id="container_1_col_1">
-              <a class="btn d-flex flex-column justify-content-center" id="signup_btn_v" href="https://forms.gle/HUqRPQuR22Uf866u6" target="_blank">
-                <h4 class="signup-filler-text">Inscrie-te drept</h4>
+              <button type="button" class="btn d-flex flex-column justify-content-center" id="signup_btn_v">
+                <h4 class="signup-filler-text" id="signup_btn_v_filler">Inscrie-te drept</h4>
                 <h1 class="signup-opt-text">Voluntar</h1>
-              </a>
+              </button>
             </div>
             <div class="p-0 d-flex flex-column align-items-center justify-content-center" id="container_1_col_2">
-              <a class="btn d-flex flex-column justify-content-center" id="signup_btn_c" href="https://forms.gle/FjwpZBwbQJTf2rLn6" target="_blank">
-                <h4 class="signup-filler-text">Inscrie-te drept</h4>
+              <button type="button" class="btn d-flex flex-column justify-content-center" id="signup_btn_c">
+                <h4 class="signup-filler-text" id="signup_btn_c_filler">Inscrie-te drept</h4>
                 <h1 class="signup-opt-text">Concurent</h1>
-              </a>
+              </button>
             </div>
           </div>
         </div>
@@ -228,9 +228,9 @@
         </p>
         <!-- loading... -->
         <div class="container d-flex justify-content-center align-items-center pb-5" id="container_3_cont_loading">
-          <div class="text-center" id="container_3_loading">
-            <img src="res/htf-logo-glitch-dark.gif" id="loading_logo" alt="Badass Logo Again">
-            <p class="font-righteous" id="loading_text">Se incarca...</p>
+          <div class="text-center loading">
+            <img src="res/htf-logo-glitch-dark.gif" class="loading-logo" alt="Badass Logo Again">
+            <p class="font-righteous loading-text">Se incarca...</p>
           </div>
         </div>
         <!-- cronometru -->
@@ -280,7 +280,7 @@
           <p class="faq-answer">Nu, fiecare echipa este libera sa foloseasca orice limbaj de programare.</p>
           <br>
           <h1 class="faq-question">Trebuie sa fiu student ca sa pot participa la competitie?</h1>
-          <p class="faq-answer">Nu, oricine peste 18 ani poate participa.</p>
+          <p class="faq-answer">Nu, orice student peste 18 ani poate participa.</p>
           <br>
           <h1 class="faq-question">Imi pot alege singur coechipierii?</h1>
           <p class="faq-answer">Da, atata timp cat si ei sunt inscrisi la concurs.</p>
@@ -309,6 +309,18 @@
         </div>
       </div>
     </section>
+
+    <div class="w-100 h-100 container-loading-off" id="container_loading">
+      <div class="text-center loading" id="loading_big">
+        <img src="res/htf-logo-glitch-dark.gif" class="loading-logo" alt="Badass Logo Again">
+        <p class="font-righteous loading-text">Se incarca...</p>
+      </div>
+      <div class="w-100 h-100" id="container_loading_back"></div>
+    </div>
+
+    <div class="alert alert-danger alert-bottom-page" id="alert_no_signup" role="alert" style="display: none;">
+      <strong>Atentie!&nbsp;&nbsp;Inscrierile pentru aceasta categorie s-au terminat!</strong>
+    </div>
 
     <script src="js/home.js"></script>
     <script src="js/util.js"></script>
