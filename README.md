@@ -1,2 +1,2 @@
-# unibuc_hackathon
-Repository pentru site-ul si resursele aferente concursului #HackTheVirus
+# unibuc_hackathon repo
+#HackTheVirus Hackathon 2020, Univerisy of Bucharest (http://old.fmi.unibuc.ro/hackthevirus/)
