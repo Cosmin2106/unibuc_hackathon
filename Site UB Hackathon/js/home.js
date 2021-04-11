@@ -1,12 +1,12 @@
 var firebaseConfig = {
-  apiKey: "AIzaSyCUMchy7fCFTtK9-Rrf_ShhABQcp2H7MSc",
-  authDomain: "ub-hack-e9576.firebaseapp.com",
-  databaseURL: "https://ub-hack-e9576.firebaseio.com",
-  projectId: "ub-hack-e9576",
-  storageBucket: "ub-hack-e9576.appspot.com",
-  messagingSenderId: "13647175785",
-  appId: "1:13647175785:web:97aa00a16e2c93360302f8",
-  measurementId: "G-9GS8P65ZMB"
+  apiKey: "<key>",
+  authDomain: "<domain>",
+  databaseURL: "<url>",
+  projectId: "<id>",
+  storageBucket: "<bucket>",
+  messagingSenderId: "<id>",
+  appId: "<id>",
+  measurementId: "<id>"
 };
 firebase.initializeApp(firebaseConfig);
 firebase.analytics();
